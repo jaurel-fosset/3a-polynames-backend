@@ -1,7 +1,10 @@
+import webserver.WebServer;
+
 public class App
 {
     public static void main(String[] args) throws Exception
     {
-        System.out.println("Hello, World!");
+        WebServer server = new WebServer();
+        server.listen(8080);
     }
 }
